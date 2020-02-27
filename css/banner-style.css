@@ -1,0 +1,44 @@
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+
+@media all and (min-width: 850px) {
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 80px;
+  }
+
+  .banner1 .banner5 {
+    grid-column: 1/span 1;
+  }
+
+  .banner2 .banner6 {
+    grid-column: 2/span 1;
+  }
+
+  .banner3 .banner7 {
+    grid-column: 2/span 1;
+  }
+
+  .banner4 .banner8 {
+    grid-column: 2/span 1;
+  }
+
+  .banner1 .banner2 .banner3 .banner4 {
+    grid-row: 1;
+  }
+
+  .banner5 .banner6 .banner7 .banner8 {
+    grid-row: 2;
+  }
+}

@@ -1,0 +1,86 @@
+body {
+  font-family: 'Raleway', 'Nunito';
+  margin: 0;
+  height: 100%
+}
+
+img {
+  width: 100%;
+}
+
+#logo {
+  height:40px;
+  width:40px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+footer {
+  position: relative;
+  height: 80px;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  color: #e07c8f;
+}
+
+a.skip{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+
+a.skip:focus{
+  top:20px;
+  color: black;
+  text-decoration-style: solid;
+}
+
+nav ul {
+  text-align: right;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 20px;
+}
+
+nav ul li {
+  display: inline;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+nav {
+  top: 0;
+  height: 60px;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  background-color: #hhhhhh;
+  position: relative;
+
+}
+
+nav ul a {
+  text-align: center;
+  text-decoration: none;
+  color: #e07c8f;
+  font-weight: 100;
+}
+
+nav ul a:hover {
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #e07c8f;
+}
+
+.current-nav-links {
+  font-weight: 900;
+  text-shadow: 0.7px 0.7px #e07c8f;
+}
